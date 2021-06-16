@@ -20,7 +20,7 @@ class club_similarity:
             (self.number_of_students, self.number_of_students),
             dtype=object)
 
-        print("\n 2) Finding common clubs between pairs of students")
+        print("\n 2) Finding common clubs between pairs of students. . .")
         # Finding common clubs between all pairs of existing students
         for i in range(self.number_of_students):
             this_clubs_similarity = np.zeros((

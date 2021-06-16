@@ -19,11 +19,15 @@ def pipeline(x) -> None:
         print("\n--------------------------------")
         similarity_dataset = club_similarity()
         similarity_dataset.find_club_similarity()
+
+        print("\n--------------------------------")
+        print("\n Stage 3: Calculating similarity indices")
+        print("\n--------------------------------")
         similarity_index = recommendations()
         similarity_index.generate_similarity_index()
 
         print("\n--------------------------------")
-        print("\n Stage 3: Generating club recommendations")
+        print("\n Stage 4: Generating club recommendations")
         print("\n--------------------------------")
         similarity_index.most_similar_users()
         similarity_index.generate_recommendations()
@@ -35,8 +39,11 @@ def pipeline(x) -> None:
         print("\n Currently under development.")
 
 
-print("Menu: \n 1. Initiate the recommendation system pipeline")
-print("\n 2. Returning user \n 3. New user")
+print("Menu: \
+     \n 1. Initiate the recommendation system pipeline \
+     \n 2. Returning user \
+     \n 3. New user")
+     
 choice = input("\n Enter 1/2/3 to proceed:")
 
 pipeline(choice)

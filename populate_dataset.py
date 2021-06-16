@@ -74,9 +74,7 @@ class populate_dataset:
             self.hash_keys.append(key)
 
     def generate_fake_interests(self) -> None:
-        print("\n 3) Generating fake club memberships,\
-             events participation, and originating faculty \
-                 for each student. . .")
+        print("\n 3) Generating fake club memberships, events participation, and originating faculty for each student. . .")
         # Generating fake clubs, events, and faculty for each student
         self.club_interests = []
         self.event_interests = []
